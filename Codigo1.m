@@ -77,14 +77,19 @@ fprintf('(3) La Coeficiente de variación de Pearson del dólar es: %.2f\n', coe
 %media_aperturas = mean(aperturas);
 %disp(media_aperturas);
 % coeficiente de asimetría (𝐴𝑆 = 𝑋̅− 𝑀0/𝑆, 𝑋̅ 𝑒𝑠 𝑙𝑎 𝑚𝑒𝑑𝑖𝑎 𝑎𝑟𝑖𝑡𝑚é𝑡𝑖𝑐𝑎, 
+
 % 𝑀0 𝑒𝑠 𝑙𝑎 𝑚𝑜𝑑𝑎 𝑦 𝑆 𝑒𝑠 𝑙𝑎 𝑑𝑒𝑠𝑣𝑖𝑎𝑐𝑖ó𝑛 𝑒𝑠𝑡á𝑛𝑑𝑎𝑟), 
-coef_asimetria = skewness(dolar)
+coef_asimetria = skewness(dolar);
 %disp(coef_asimetria);
-coefi_asimetria = ((media_aritmetica-moda)/desviacion_estandar)
+coefi_asimetria = ((media_aritmetica-moda)/desviacion_estandar);
+fprintf('(3) El Coeficiente de asimetria arrojado es: %.2f\n', coef_asimetria);
+fprintf('(3) El Coeficiente de asimetria calculado es: %.2f\n', coefi_asimetria);
 % kurtosis, 
-k = kurtosis(dolar)
+k = kurtosis(dolar);
+fprintf('(3) La kurtosis es: %.2f\n', k);
 %kurtosis poblacional
-ku = kurtosis(dolar, 0)
+ku = kurtosis(dolar, 0);
+fprintf('(3)  La kurtosis poblacional es: %.2f\n', ku);
 % la convolución y la correlación. 
 %cambio_dolar = dolarhisto.Cambio_dolar;
 % También deben calcular el número de índice, 
