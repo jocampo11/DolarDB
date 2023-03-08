@@ -13,7 +13,6 @@ dolar = xlsread ('DB Datos.xlsx',-1);
 dolarhisto = readtable('HistoricoDolar.xlsx');
 
 % Lee los datos del archivo
-
 filename = 'DB Datos.xlsx';
 sheet = 'Hoja1';
 Meses = 'Mes';
